@@ -12,6 +12,7 @@ Discord のユーザー ID と X (Twitter) のアカウントを紐づけて管�
 ## 必要条件
 
 - Python 3.8 以上
+- 24時間稼働可能な Linux サーバー (Ubuntu, Debian, CentOS 等)
 - Discord 開発者ポータルのボットアカウント
 - X (Twitter) 開発者ポータルの API アカウント (Free 以上)
 
@@ -19,8 +20,8 @@ Discord のユーザー ID と X (Twitter) のアカウントを紐づけて管�
 
 ### 1. リポジトリの準備
 ```bash
-git clone <repository-url>
-cd discord-x-linker
+git clone https://github.com/ARNY0421/Discatfish
+cd Discatfish
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -48,7 +49,7 @@ FLASK_SECRET_KEY=適当な文字列
 - User authentication settings:
     - App type: Web App, Native App, or Additional Client
     - App permissions: Read
-    - Callback URI: http://あなたのサーバーのIPまたはドメイン/callback
+    - Callback URI: http://あなたのサーバー of IPまたはドメイン/callback
     - Website URL: https://your-website.com (任意の公開URL。ご自身のGitHubプロフィールなどで構いません)
 
 ### 4. 実行
