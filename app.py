@@ -7,7 +7,11 @@ from requests_oauthlib import OAuth2Session
 from dotenv import load_dotenv
 from database import init_db, link_user
 
-load_dotenv()
+# ディレクトリ内のすべての .env 拡張子を持つファイルを読み込む
+env_dir = os.path.dirname(__file__)
+for f in os.listdir(env_dir):
+    if f.endswith('.env'):
+        load_dotenv(os.path.join(env_dir, f))
 
 app = Flask(__name__)
 app.secret_key = os.getenv("FLASK_SECRET_KEY", "flask_secret_change_me")
