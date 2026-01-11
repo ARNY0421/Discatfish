@@ -47,7 +47,7 @@ FLASK_SECRET_KEY=適当な文字列
 - User authentication settings:
     - App type: Web App, Native App, or Additional Client
     - App permissions: Read
-    - Callback URI: http://あなたのサーバー of IPまたはドメイン/callback
+    - Callback URI: http://あなたのサーバーのIPまたはドメイン/callback
     - Website URL: https://your-website.com (任意の公開URL。ご自身のGitHubプロフィールなどで構いません)
 
 ### 4. 実行
