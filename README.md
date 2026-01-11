@@ -18,17 +18,15 @@ Discord のユーザー ID と X (Twitter) のアカウントを紐づけて管�
 
 ## セットアップ手順
 
-### 1. リポジトリの準備
+### 1. 準備
+リポジトリからファイルをダウンロードして展開し、そのフォルダ内で以下のコマンドを実行して必要なライブラリをインストールしてください。
+
 ```bash
-git clone https://github.com/ARNY0421/Discatfish
-cd Discatfish
-python3 -m venv venv
-source venv/bin/activate
 pip install -r requirements.txt
 ```
 
 ### 2. 環境設定 (.env)
-.env ファイルを作成し、以下の項目を設定してください：
+.env ファイルを作成し、以下の項目を設定してください
 
 ```env
 DISCORD_BOT_TOKEN=Discordのボットトークン
