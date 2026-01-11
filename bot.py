@@ -6,8 +6,11 @@ from dotenv import load_dotenv
 import hmac
 import hashlib
 import time
-
-load_dotenv()
+# ディレクトリ内のすべての .env 拡張子を持つファイルを読み込む
+env_dir = os.path.dirname(__file__)
+for f in os.listdir(env_dir):
+    if f.endswith('.env'):
+        load_dotenv(os.path.join(env_dir, f))
 
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 SECRET_KEY = os.getenv("SIGNING_SECRET", "default_secret_key_change_me")
