@@ -12,14 +12,13 @@ Discord のユーザー ID と X (Twitter) のアカウントを紐づけて管�
 ## 必要条件
 
 - Python 3.8 以上
-- 24時間稼働可能な Linux サーバー (Ubuntu, Debian, CentOS 等)
 - Discord 開発者ポータルのボットアカウント
 - X (Twitter) 開発者ポータルの API アカウント (Free 以上)
 
 ## セットアップ手順
 
 ### 1. 準備
-リポジトリからファイルをダウンロードして展開し、そのフォルダ内で以下のコマンドを実行して必要なライブラリをインストールしてください。
+リポジトリからファイルをダウンロード、または直接コピーして展開し、そのフォルダ内で以下のコマンドを実行して必要なライブラリをインストールしてください。
 
 ```bash
 pip install -r requirements.txt
@@ -54,7 +53,7 @@ FLASK_SECRET_KEY=適当な文字列
 
 app.pyとbot.pyを起動してください。
 
-discord上で"/link"と送信することでURLの発行が可能です
+botが起動したら、discord上にて"/link"と送信することでURLの発行が可能です
 
 ## ディレクトリ構成
 
@@ -68,3 +67,6 @@ discord上で"/link"と送信することでURLの発行が可能です
 ## ライセンス
 
 MIT License
+
+※本プログラムを含んだ二次配布や公開の際は、クレジット"Discatfish(Elnabu)"の表記をお願いします。
+(Please include the credit "Discatfish(Elnabu)" when redistributing or making this program public.)
