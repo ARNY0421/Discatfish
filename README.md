@@ -54,6 +54,8 @@ FLASK_SECRET_KEY=適当な文字列
 
 app.pyとbot.pyを起動してください。
 
+discord上で"/link"と送信することでURLの発行が可能です
+
 ## ディレクトリ構成
 
 - app.py: Flask ウェブサーバー（OAuth 処理）
