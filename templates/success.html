@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success - Account Linked</title>
+    <style>
+        :root {
+            --bg-color: #0f1419;
+            --card-bg: #15202b;
+            --text-color: #ffffff;
+            --primary-color: #1d9bf0;
+            --success-color: #1a91da;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #0f1419 0%, #15202b 100%);
+        }
+
+        .container {
+            background-color: rgba(21, 32, 43, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #00ba7c;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .username {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        p {
+            color: #8899a6;
+            margin-bottom: 2rem;
+        }
+
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            background-color: #00ba7c;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 1.5rem auto;
+            color: white;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="checkmark">✓</div>
+        <h1>連携完了！</h1>
+        <p>アカウント <span class="username">@{{ username }}</span> は正常に Discord と紐付けられました。<br>このウィンドウを閉じて Discord に戻ってください。
+        </p>
+    </div>
+</body>
+
+</html>
