@@ -66,7 +66,4 @@ botが起動したら、discord上にて"/link"と送信することでURLの発
 
 ## ライセンス
 
-MIT License
-
-※本プログラムを含んだ二次配布や公開の際は、クレジット"Discatfish(Elnabu)"の表記をお願いします。
-(Please include the credit "Discatfish(Elnabu)" when redistributing or making this program public.)
+[MIT License](./LICENSE)
